@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font), sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  color-scheme: light dark;
+  font-size: 20px;
+  min-height: 100vh;
+
+  &.win {
+    font-family: NotoColorEmojiLimited, var(--font), sans-serif;
+  }
+}
+
+#application {
+  width: 800px;
+  margin: 0 auto;
+}
+
+#application > header {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1rex;
+  margin-bottom: 1rex;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#application > header > h3 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+#application > header > nav {
+  margin-left: 2rem;
+  display: flex;
+  gap: 1rem;
+
+  & > a {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,47 @@
+:root {
+  --darkmode: 0;
+  container-name: root;
+  container-type: normal;
+
+  --gap: 0.5rem;
+  --font: system-ui, ui-sans-serif, -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --darkmode: 1;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --darkmode: 0;
+  }
+}
+
+@font-face {
+  font-family: NotoColorEmojiLimited;
+  unicode-range: U+1F1E6-1F1FF;
+  src: url(https://raw.githack.com/googlefonts/noto-emoji/main/fonts/NotoColorEmoji.ttf);
+}
+
+body {
+  --background-color: #FFF;
+  --text-color: #222;
+  color-scheme: light dark;
+}
+
+@container root style(--darkmode: 1) {
+  body {
+    --background-color: hsl(228, 5%, 15%);
+    --text-color: hsl(228, 5%, 80%);
+    color-scheme: dark light;
+  }
+}
+
+#application {
+  --border-color: color-mix(in srgb, var(--text-color) 50%, transparent);
+  --border-color-field: color-mix(in srgb, var(--text-color) 20%, transparent);
+}

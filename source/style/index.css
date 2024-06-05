@@ -1,0 +1,6 @@
+@import "./palette.css";
+@import "./layout.css";
+@import "./form.css";
+
+/* страницы */
+@import "./registration-form.css";

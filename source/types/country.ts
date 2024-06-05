@@ -1,0 +1,9 @@
+export type CountryISO = "AC" | "AU" | "AT" | "AZ" | "AX" | "AL" | "DZ" | "VI" | "AS" | "AI" | "AO" | "AD" | "AQ" | "AG" | "AR" | "AM" | "AW" | "AF" | "BS" | "BD" | "BB" | "BH" | "BZ" | "BY" | "BE" | "BJ" | "BM" | "BG" | "BO" | "BQ" | "BA" | "BW" | "BR" | "IO" | "VG" | "BN" | "BF" | "BI" | "BT" | "VU" | "VA" | "GB" | "HU" | "VE" | "TL" | "VN" | "GA" | "HT" | "GY" | "GM" | "GH" | "GP" | "GT" | "GF" | "GN" | "GW" | "DE" | "GG" | "GI" | "HN" | "HK" | "GD" | "GL" | "GR" | "GE" | "GU" | "DK" | "JE" | "DJ" | "DM" | "DO" | "CD" | "EG" | "ZM" | "ZW" | "IL" | "IN" | "ID" | "JO" | "IQ" | "IR" | "IE" | "IS" | "ES" | "IT" | "YE" | "CV" | "KZ" | "KY" | "KH" | "CM" | "CA" | "QA" | "KE" | "CY" | "KG" | "KI" | "TW" | "KP" | "CN" | "CC" | "CO" | "KM" | "CR" | "CI" | "CU" | "KW" | "CW" | "LA" | "LV" | "LS" | "LR" | "LB" | "LY" | "LT" | "LI" | "LU" | "MU" | "MR" | "MG" | "YT" | "MO" | "MK" | "MW" | "MY" | "ML" | "MV" | "MT" | "MA" | "MQ" | "MH" | "MX" | "FM" | "MZ" | "MD" | "MC" | "MN" | "MS" | "MM" | "NA" | "NR" | "NP" | "NE" | "NG" | "NL" | "AN" | "NI" | "NU" | "NZ" | "NC" | "NO" | "AE" | "OM" | "IM" | "CK" | "NF" | "CX" | "PN" | "SH" | "PK" | "PW" | "PS" | "PA" | "PG" | "PY" | "PE" | "PL" | "PT" | "PR" | "CG" | "KR" | "RE" | "RU" | "RW" | "RO" | "SV" | "WS" | "SM" | "ST" | "SA" | "SZ" | "MP" | "SC" | "BL" | "MF" | "PM" | "SN" | "VC" | "KN" | "LC" | "RS" | "SG" | "SX" | "SY" | "SK" | "SI" | "SB" | "SO" | "SD" | "SR" | "US" | "SL" | "TJ" | "TH" | "TZ" | "TC" | "TG" | "TK" | "TO" | "TT" | "TV" | "TN" | "TM" | "TR" | "UG" | "UZ" | "UA" | "WF" | "UY" | "FO" | "FJ" | "PH" | "FI" | "FK" | "FR" | "PF" | "HR" | "CF" | "TD" | "ME" | "CZ" | "CL" | "CH" | "SE" | "SJ" | "LK" | "EC" | "GQ" | "ER" | "EE" | "ET" | "ZA" | "GS" | "SS" | "JM" | "JP" | "XK";
+
+export type CountryData = {
+  ru: string;
+  en: string;
+  iso2: CountryISO;
+  dial: string;
+  mask: Array<string>;
+}
